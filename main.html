@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BM King Kebab</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#baner"><img src="logo.png" alt="BM King Kebab Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#lokal">Lokal</a></li>
+                <li><a href="#promocje">Promocje</a></li>
+                <li><a href="#opinie">Opinie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="#onas">O nas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner" id="baner">
+        <img src="baner.png" alt="Baner" />
+    </div>
+
+    <main>
+        <section id="menu" class="section">
+            <h1>Menu</h1>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="kebab-przyklad.jpg" alt="Kebab Klasyczny" />
+                        <div class="price-tag">22 zł</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h2>Kebab Klasyczny</h2>
+                        <p>Mięso z kurczaka, frytki, warzywa, sos do wyboru</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="kebab-przyklad.jpg" alt="Kebab Wegetariański" />
+                        <div class="price-tag">20 zł</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h2>Kebab Wegetariański</h2>
+                        <p>Falafel, warzywa, sos do wyboru</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-img">
+                        <img src="kebab-przyklad.jpg" alt="Mega Kebab" />
+                        <div class="price-tag">26 zł</div>
+                    </div>
+                    <div class="menu-item-content">
+                        <h2>Mega Kebab</h2>
+                        <p>Więcej mięsa, więcej smaku!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lokal" class="section">
+            <h1>Lokal</h1>
+            <p>Odwiedź nas w naszej lokalizacji:</p>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.372282990559!2d19.414482377105593!3d52.01208897193207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcd68c683ae0f%3A0xbda803f7bb089f!2sParz%C4%99czewska%2022%2C%2095-100%20Zgierz!5e0!3m2!1spl!2spl!4v1712505280963!5m2!1spl!2spl"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <p><strong>Adres:</strong> Parzęczewska 22, 95-100 Zgierz</p>
+            <p><strong>Godziny otwarcia:</strong><br />
+                Poniedziałek - Czwartek: 09:00–01:00<br />
+                Piątek - Niedziela: 09:00–02:00
+            </p>
+        </section>
+
+        <section id="promocje" class="section">
+            <h1>Promocje</h1>
+            <p>Sprawdź nasze aktualne promocje – zapraszamy codziennie!</p>
+        </section>
+
+        <section id="opinie" class="section">
+            <h1>Opinie</h1>
+            <p>Wasze opinie są dla nas najważniejsze! ⭐⭐⭐⭐⭐</p>
+        </section>
+
+        <section id="kontakt" class="section">
+            <div class="contact-form">
+                <h1>Kontakt</h1>
+                <form>
+                    <input type="text" name="name" placeholder="Imię" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <textarea name="message" rows="5" placeholder="Wiadomość" required></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="onas" class="section">
+            <h1>O nas</h1>
+            <p>BM King Kebab – pasja, smak i jakość od lat. Przyjdź i przekonaj się sam!</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com">
+                <img src="instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.youtube.com">
+                <img src="youtube.png" alt="YouTube" />
+            </a>
+        </div>
+        <p>&copy; 2025 BM King Kebab. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+    
+
+    <script>
+        window.onscroll = function() {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.style.opacity = "0.9";
+            } else {
+                header.style.opacity = "1";
+            }
+        };
+    </script>
+</body>
+
+</html>
